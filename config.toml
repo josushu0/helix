@@ -1,0 +1,42 @@
+theme = "catppuccin_mocha"
+
+[editor]
+auto-format = false
+color-modes = true
+cursorline = true
+shell = ["fish"]
+
+[editor.statusline]
+left = ["mode", "diagnostics"]
+center = ["spinner", "file-name"]
+right = [
+  "file-type",
+  "file-encoding",
+  "file-line-ending",
+  "position",
+  "total-line-numbers",
+]
+separator = "│"
+mode.normal = "NOR"
+mode.insert = "INS"
+mode.select = "SEL"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 0
+
+[keys.insert]
+k = { j = "normal_mode" } # Maps `kj` to exit insert mode
+
+[keys.normal.space]
+w = ":w" # Maps w in space mode to write file
+q = ":q" # Maps q in space mode to quit helix
+c = ":bc" # Close current buffer
+t = ":theme catppuccin_latte" # Change theme to catppuccin_latte
+T = ":theme catppuccin_mocha" # Change theme to catppuccin_mocha
