@@ -34,9 +34,11 @@ skip-levels = 0
 [keys.insert]
 k = { j = "normal_mode" } # Maps `kj` to exit insert mode
 
+[keys.normal]
+A-t = ":theme catppuccin_latte"
+A-T = ":theme catppuccin_mocha"
+
 [keys.normal.space]
 w = ":w" # Maps w in space mode to write file
 q = ":q" # Maps q in space mode to quit helix
 c = ":bc" # Close current buffer
-t = ":theme catppuccin_latte" # Change theme to catppuccin_latte
-T = ":theme catppuccin_mocha" # Change theme to catppuccin_mocha
