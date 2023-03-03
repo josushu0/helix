@@ -1,4 +1,4 @@
-theme = "catppuccin_mocha"
+theme = "rose_pine"
 
 [editor]
 auto-format = false
@@ -35,8 +35,8 @@ skip-levels = 0
 k = { j = "normal_mode" } # Maps `kj` to exit insert mode
 
 [keys.normal]
-A-t = ":theme catppuccin_latte"
-A-T = ":theme catppuccin_mocha"
+A-t = ":theme rose_pine_dawn"
+A-T = ":theme rose_pine"
 
 [keys.normal.space]
 w = ":w" # Maps w in space mode to write file
