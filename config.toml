@@ -7,7 +7,7 @@ cursorline = true
 shell = ["fish"]
 
 [editor.statusline]
-left = ["mode", "diagnostics"]
+left = ["mode", "diagnostics", "spacer", "version-control"]
 center = ["spinner", "file-name"]
 right = [
   "file-type",
@@ -20,6 +20,9 @@ separator = "│"
 mode.normal = "NOR"
 mode.insert = "INS"
 mode.select = "SEL"
+
+[editor.lsp]
+auto-signature-help = false
 
 [editor.cursor-shape]
 normal = "block"

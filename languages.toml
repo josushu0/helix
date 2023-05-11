@@ -29,3 +29,13 @@ indent = { tab-width = 2, unit = "	" }
 [[language]]
 name = "tsx"
 indent = { tab-width = 2, unit = "	" }
+
+[[language]]
+name = "vue"
+indent = { tab-width = 2, unit = "	" }
+language-server = { command = "vue-language-server", args = ["--stdio"] }
+
+[[language]]
+name = "rust"
+indent = { tab-width = 2, unit = "	" }
+language-server = { command = "rustup", args = ["run stable rust-analyzer --stdio"] }
