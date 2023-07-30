@@ -32,10 +32,17 @@ indent = { tab-width = 2, unit = "	" }
 
 [[language]]
 name = "vue"
+file-types = ["vue"]
 indent = { tab-width = 2, unit = "	" }
 language-server = { command = "vue-language-server", args = ["--stdio"] }
+config = { typescript = { tsdk = "/home/josue/.local/share/pnpm/global/5/node_modules/typescript/lib/" } }
+formatter = { command = "prettier", args = ["--parser", "vue"] }
 
 [[language]]
 name = "rust"
 indent = { tab-width = 2, unit = "	" }
 language-server = { command = "rustup", args = ["run stable rust-analyzer --stdio"] }
+
+[[language]]
+name = "svelte"
+indent = { tab-width = 2, unit = "	" }
